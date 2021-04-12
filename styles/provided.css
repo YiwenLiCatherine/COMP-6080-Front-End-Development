@@ -1,0 +1,129 @@
+
+/* base styles, feel free to edit */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    height: 100%;
+    font-family: -apple-system, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    border-bottom: 1px solid rgba(0,0,0,.0975);
+}
+
+footer {
+    border-top: 1px solid rgba(0,0,0,.0975);
+    padding: 10px;
+    background-color:white;
+    min-height: 60px;
+    text-align: right;
+}
+
+.banner > *, footer > * {
+    margin: 10px 25px;
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-item {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 5px;
+    display: inline;
+    list-style-type: none;
+}
+
+/* Add your styles here */
+.text_center{
+    text-align: center;
+    background-color: whitesmoke;
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid lightgrey;
+}
+.popup_style{
+    background-color: gold;
+    text-align: right;
+}
+.right_style{
+    text-align: right;
+}
+.popup_x_style{
+    background-color: red;
+    color: white;
+}
+.display_none{
+    display: none;
+}
+
+label{
+    display: inline-block;
+    text-align: right;
+    width: 150px;
+    vertical-align: top;
+}
+.feedBoxStyle{
+    border: 1px solid darkgray;
+    margin: 30px 10px;
+}
+.authorBoxStyle{
+    background-color: darkgray;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+.LeftStyle{
+    text-align: left;
+    margin: 5px;
+}
+.likesBoxStyle{
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.timeStyle{
+    text-align: left;
+    color: darkgray;
+    font-size: 4px;
+}
+
+.userNameElementStyle{
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.postAndFollowElementStyle{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+}
+
+.inlineBlock{
+    display: inline-block;
+    cursor: pointer;
+}
+
+.userInfOnFeedStyle{
+    text-align: left;
+    margin: 10px;
+    padding-bottom: 20px;
+    border-bottom: darkgray 1px solid;
+}

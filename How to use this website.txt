@@ -1,0 +1,27 @@
+2.1.1. Login
+	Use correct username and password
+
+2.1.2 Registration
+	Provide valid infomation
+	When registeration is finished, it turns to a 'register success' page. Press Continue button. Then use the information to login.
+
+2.1.3 Error Popup
+	Error box pop up whenever sth go wrong
+
+2.2.1. Basic Feed
+	The home page - display author, time, image, the amount of likes and comments, and descriptionof the post.
+
+2.3.1. Show Likes
+	click the number right next to 🤍 - the nunmber plz!!!!!
+
+2.3.2. Show Comments
+	click the number right next to 📝 - the number,  not the emoji!!!!!
+
+2.3.3. Ability for you to like content
+	click the emoji 🤍
+
+2.4.1. Profile View
+	click the user's name
+
+2.4.2. Follow
+	click the follow/unfollow button

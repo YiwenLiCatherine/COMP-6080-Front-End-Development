@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quickpic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- You can add your styles and scripts here -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/provided.css" />
+    <script type="module" src="src/helpers.js"></script>
+    <script type="module" src="src/api.js"></script>
+</head>
+<body>
+    <!-- This is an example app structure, you can modify this as much as you choose --> 
+    <header class="banner">
+        <h1>Quickpic</h1>
+    </header>
+    <main role="main">
+        <!-- app goes here -->
+        <!------------------------ErrorPopup------------------------>
+        <div id="errorPopupForm" class="display_none popup_style">
+            <button id="errorPopupFromClose" class="popup_x_style">x</button>
+            <div id="errorPopupContent"></div>
+        </div>
+        <!------------------------Login------------------------>
+        <div id="loginForm">
+            <div class="text_center">
+                <h2>Please login! :)</h2>
+                <label for="username">username:</label>
+                <input type="text" id="username"/><br/><br/>
+                <label for="password1">password:</label>
+                <input type="password" id="password1"/><br /><br/>
+                <label for="password2">confirm password:</label>
+                <input type="password" id="password2"/><br /><br/>
+                <button id="loginSubmitButton">Login</button>
+            </div>
+            <div class="text_center">
+                Don't have an account?<br><br>
+                <button id="registerFormButton">Register</button>
+            </div>
+        </div>
+
+        <!------------------------Register------------------------>
+        <div id="registerForm" class="display_none">
+            <div class="text_center">
+                <h2>Please register account! :)</h2>
+                <label for="registerUsername">username:</label>
+                <input type="text" id="registerUsername" /><br/><br/>
+                <label for="registerPassword1">password:</label>
+                <input type="password" id="registerPassword1" /><br/><br/>
+                <label for="registerPassword2">confirm password:</label>
+                <input type="password" id="registerPassword2" /><br /><br/>
+                <label for="registerEmailAddress">email address:</label>
+                <input type="text" id="registerEmailAddress"><br><br>
+                <label for="registerName">name:</label>
+                <input type="text" id="registerName"><br><br>
+                <button id="registerButton">Register</button>
+            </div>
+        </div>
+        <!------------------------RegisterSuccess------------------------>
+        <div id="registerSuccess" class="display_none">
+            <div class="text_center">
+                <h2>Register Success!</h2>
+                <div id="registerUserInf"></div><br>
+                <button id="registerToLogin">Continue...</button>
+            </div>
+        </div>
+
+        <!------------------------myBasicFeed------------------------>
+        <div id="mybasicFeed" class="display_none text_center">
+            <div id="myuserInfOnFeed" class="userInfOnFeedStyle"></div>
+            <div class="LeftStyle">
+                <button id="addAPost">Add a post</button>
+            </div>
+            <div id="myuserBasicFeed"></div>
+        </div>
+
+        <!------------------------BasicFeed------------------------>
+        <div id="basicFeed" class="display_none text_center">
+            <div class="right_style">
+                <button id="returnToMybasicFeed" class="popup_x_style">Error</button>
+            </div>
+            <div id="userInfOnFeed" class="userInfOnFeedStyle"></div>
+            <div class="LeftStyle">
+                <button id="followButton">Unfollow</button>
+            </div>
+            <div id="userBasicFeed"></div>
+        </div>
+
+        <!------------------------ShowLikesList------------------------>
+        <div id="showListOfLikes" class="display_none text_center">
+            <div class="right_style">
+                <button id="likesToFeed" class="popup_x_style">x</button>
+            </div>
+            <div id="showListOfLikesContent"></div>
+        </div>
+
+        <!------------------------ShowComment------------------------>
+        <div id="showComments" class="display_none text_center">
+            <div class="right_style">
+                <button id="commentsToFeed" class="popup_x_style">x</button>
+            </div>
+            <div id="showCommentContent"></div>
+        </div>
+
+        <!------------------------ListOfFollowing------------------------>
+        <div id="list_of_following" class="display_none text_center">
+            <div class="right_style">
+                <button id="followingToFeed" class="popup_x_style">x</button>
+            </div>
+            <div id="ListOfFollowingContent"></div>
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; Quickpic</p>
+    </footer>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
